@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #020617;
+  padding: 32px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+input:disabled {
+  opacity: 0.6;
+}
+
+.mensagem {
+  min-height: 18px;
+  font-size: 14px;
+}
+
+
+
+.formulario.inicial .mensagem {
+  color: transparent;
+}
+
+.formulario.validando .mensagem {
+  color: #facc15;
+}
+
+.formulario.erro .mensagem {
+  color: #f87171;
+}
+
+.formulario.sucesso .mensagem {
+  color: #4ade80;
+}
+
+.botao {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.botao:disabled {
+  background: #334155;
+  cursor: not-allowed;
+}

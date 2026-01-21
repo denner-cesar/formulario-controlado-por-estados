@@ -1,0 +1,9 @@
+export const EVENTOS = {
+    SUBMETER: "SUBMETER",
+    SUCESSO: "SUCESSO",
+    ERRO: "ERRO",
+    RESETAR: "RESETAR",
+    VALIDO:"VALIDO",
+    INVALIDO:"INVALIDO",
+    DIGITAR:"DIGITAR",
+};

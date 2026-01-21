@@ -1,0 +1,36 @@
+import { ESTADOS } from "./estados.js"
+import { EVENTOS } from "./eventos.js"
+
+export const TRANSICOES = {
+    [ESTADOS.INICIAL]: {
+        [EVENTOS.SUBMETER]: ESTADOS.VALIDANDO
+    },
+
+    [ESTADOS.VALIDANDO]: {
+        [EVENTOS.VALIDO]: ESTADOS.ENVIANDO,
+        [EVENTOS.INVALIDO]: ESTADOS.ERRO
+    },
+
+    [ESTADOS.ERRO]: {
+        [EVENTOS.DIGITAR]: ESTADOS.EDITANDO,
+
+    },
+    [ESTADOS.ENVIANDO]: {
+        [EVENTOS.SUCESSO]: ESTADOS.SUCESSO,
+        [EVENTOS.ERRO]: ESTADOS.ERRO,
+    },
+
+    [ESTADOS.SUCESSO]: {
+        [EVENTOS.RESETAR]: ESTADOS.INICIAL
+    },
+
+    [ESTADOS.EDITANDO]: {
+        [EVENTOS.SUBMETER]: ESTADOS.VALIDANDO
+    },
+
+    [ESTADOS.SUCESSO]: {
+        [EVENTOS.RESETAR]: ESTADOS.INICIAL
+    }
+
+
+}

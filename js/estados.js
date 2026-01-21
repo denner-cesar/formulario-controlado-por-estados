@@ -1,0 +1,9 @@
+export const ESTADOS = {
+    INICIAL: "INICIAL",
+    VALIDANDO: "VALIDANDO",
+    ENVIANDO:"ENVIANDO",
+    SUCESSO: "SUCESSO",
+    ERRO: "ERRO",
+    EDITANDO:"EDITANDO",
+    
+}
