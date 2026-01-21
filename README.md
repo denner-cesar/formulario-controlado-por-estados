@@ -9,12 +9,12 @@ Tratamento correto de erro, edição e sucesso
 Fluxo real de formulário (validar → enviar → feedback)
 
 # Estados Principais
-INICIAL
-VALIDANDO
-ENVIANDO
-ERRO
-EDITANDO
-SUCESSO
+INICIAL,
+VALIDANDO,
+ENVIANDO,
+ERRO,
+EDITANDO,
+SUCESSO,
 
 
 #Diferenciais
